@@ -13278,7 +13278,7 @@ Think about the pros and cons of adding more training points based on if the tra
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> The graph I am evaluating has a maximum depth of 10. As more training points are added, the training curve will barely converge towards the testing curve. The testing curve will act in the same manner with very minimal convergence. Adding more training points will indeed benefit the model because we are helping the model generalize. This chart shows to have a high variance which we can conclude that this is an overfit.</p>
+<p><strong>Answer: </strong> The graph I am evaluating has a maximum depth of 10. As more training points are added, the training curve will barely converge towards the testing curve. The testing curve will act in the same manner with very minimal convergence. Adding more training points typically would benefit the model but in this case you can see that the training curve is starting to attempt to diverge which is an indicator that adding more points wouldnt necessarily improve the model much. This chart shows to have a high variance which we can conclude that this is an overfit.</p>
 
 </div>
 </div>
@@ -13764,7 +13764,7 @@ IiJRQ0lPRESihpKeiIhEDSU9ERGJGkp6IiISNZT0REQkavwvnm5dSVMpfsoAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> When the model is trained with the maximum depth of 1 it suffers from high bias. When the model is trained with a maximum depth of 10 the model suffers from high variance. This is due to how far apart both of the curves are at that point on the x axis.</p>
+<p><strong>Answer: </strong> When the model is trained with the maximum depth of 1 it suffers from high bias. I can tell this because our curves converge at a lower score. When the model is trained with a maximum depth of 10 the model suffers from high variance. This is due to how far apart both of the curves are at that point on the x axis.</p>
 
 </div>
 </div>
@@ -13788,7 +13788,7 @@ IiJRQ0lPRESihpKeiIhEDSU9ERGJGkp6IiISNZT0REQkavwvnm5dSVMpfsoAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> The maximum depth of 3 results in a model that best generalizes the data. It is right before the training curve starts to diverge off of the validation curve. Plus the two point are not too close for underfitting nor are they too far to suggest overfitting.</p>
+<p><strong>Answer: </strong> The maximum depth of 3 results in a model that best generalizes the data. It is right before the training curve starts to diverge off of the validation curve. The two points are on the higher end meaning that there is a low bias as well as the curves are closer together which demonstrates a low variance.</p>
 
 </div>
 </div>
